@@ -1,0 +1,279 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #fffcf8;
+  color: #24303e;
+  line-height: 1.6;
+}
+
+/* NAVIGATION */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #3ebfff;
+}
+
+header nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+header .contact {
+  background: white;
+  color: #24303e;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+/* HERO */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  text-align: center;
+  font-family: 'Fraunces 9pt Soft', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+}
+
+.banner-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.banner h1 {
+  position: relative;
+  z-index: 2;
+  font-size: 56px;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.arrow-icon {
+  position: relative;
+  z-index: 2;
+  width: 30px;
+  height: 107.5px;
+}
+
+
+/* SECTION GRIDS */
+.section-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.section-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+}
+
+.text-block h2 {
+  font-family: 'Fraunces 9pt Soft', serif;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.text-block p {
+  margin-bottom: 30px;
+  color: #808397;
+}
+
+.text-block a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Fraunces 9pt Soft';
+  color: #24303e;
+  text-decoration: underline;
+}
+
+/* SERVICES SECTION */
+.services {
+  display: flex;
+  width: 100%;
+  height: 600px;
+}
+
+.service {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.text-overlay {
+  position: relative;
+  z-index: 2;
+  max-width: 340px;
+  padding: 20px;
+}
+
+.service h3 {
+  font-family: 'Fraunces 9pt Soft', serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #24554a; /* pour graphic */
+  margin-top: 150px;
+
+}
+
+.service.graphic h3 {
+  color: #24554a;
+}
+
+.service.photo h3 {
+  color: #052c3b;
+  opacity: 0.75;
+}
+
+.service p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-top: 15px;
+}
+
+.service.graphic p {
+  color: #3e7467;
+}
+
+.service.photo p {
+  color: #19536c;
+}
+
+
+/* TESTIMONIALS */
+.testimonials {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.testimonials h2 {
+  font-family: 'Fraunces 9pt Soft';
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: #a7aaad;
+  margin-bottom: 60px;
+}
+
+.testimonials .cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-card {
+  max-width: 300px;
+}
+
+.testimonial-card img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.testimonial-card p {
+  color: #5b636d;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.testimonial-card .name {
+  font-weight: bold;
+}
+
+.testimonial-card .role {
+  color: #a7aaad;
+  font-size: 14px;
+}
+
+/* IMAGE GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: #90d4c6;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;         
+  gap: 15px;            
+  margin-bottom: 20px;
+}
+
+footer nav a {
+  color: #458d7e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+footer .socials {
+  margin-top: 30px;
+}
+
+footer .socials img {
+  margin: 0 10px;
+  width: 20px;
+  height: 20px;
+}
+

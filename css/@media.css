@@ -1,0 +1,130 @@
+@media (max-width: 768px) {
+  /* NAVIGATION */
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav a {
+    color: white;
+    margin-left: 0;
+  }
+
+  /* Banner */
+  .banner {
+    height: auto;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+    letter-spacing: 4px;
+  }
+
+  .arrow-icon {
+    margin-top: 40px;
+    height: 70px;
+  }
+
+  /* GRID SECTIONS */
+  .section-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section-grid img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text-block {
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  .text-block h2 {
+    font-size: 24px;
+  }
+
+  .text-block p {
+    font-size: 16px;
+  }
+
+  /* SERVICES */
+  .services {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .service {
+    width: 100%;
+    height: 600px;
+  }
+
+  .text-overlay {
+    padding: 20px;
+    max-width: 90%;
+    margin-top: 60%;
+    text-align: center;
+  }
+
+  .service h3 {
+    font-size: 22px;
+  }
+
+  .service p {
+    font-size: 15px;
+  }
+
+  /* TESTIMONIALS */
+  .testimonials {
+    padding: 50px 20px;
+  }
+
+  .testimonials h2 {
+    font-size: 16px;
+    letter-spacing: 3px;
+  }
+
+  .testimonials .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+    margin-bottom: 40px;
+  }
+
+  /* GALLERY */
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 40px 20px;
+  }
+
+  footer nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer nav a {
+    margin: 0;
+  }
+
+  footer .socials {
+    margin-top: 20px;
+  }
+}

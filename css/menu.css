@@ -1,0 +1,54 @@
+/* Masquer le menu et le bouton sur desktop */
+nav {
+  display: flex;
+  gap: 20px;
+}
+#menu-toggle {
+  display: none;
+}
+
+/* Mobile : afficher le menu hamburger */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 10%;
+    width: 80%;
+    background: rgb(187, 233, 241);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px 0 10px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+  }
+
+  #mobile-menu a.contact {
+    background: hsl(51, 100%, 49%);
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+}
